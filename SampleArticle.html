@@ -16,10 +16,36 @@
             height: auto;
         }
     </style>
-    <title>My JSON-LD Article</title>
+    <title>Title of a News Article</title>
 </head>
 <body>
     <div class="container">
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "headline": "Title of a News Article",
+          "image": [
+            "https://example.com/photos/1x1/photo.jpg",
+            "https://example.com/photos/4x3/photo.jpg",
+            "https://example.com/photos/16x9/photo.jpg"
+          ],
+          "datePublished": "2015-02-05T08:00:00+08:00",
+          "dateModified": "2015-02-05T09:20:00+08:00",
+          "author": [
+            {
+              "@type": "Person",
+              "name": "Jane Doe",
+              "url": "https://example.com/profile/janedoe123"
+            },
+            {
+              "@type": "Person",
+              "name": "John Doe",
+              "url": "https://example.com/profile/johndoe123"
+            }
+          ]
+        }
+        </script>
         <article>
             <h1>Title of the Article</h1>
             <p>Author: Lucas Allen</p>
@@ -31,20 +57,5 @@
             </div>
         </article>
     </div>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Title of the Article",
-      "author": "Lucas Allen",
-      "datePublished": "2023-10-12",
-      "description": "A brief description of the article.",
-      "image": "article-image.jpg",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Your Organization"
-      }
-    }
-    </script>
 </body>
 </html>
