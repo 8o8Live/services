@@ -1,5 +1,25 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Bootstrap CSS from the CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS styles for the page */
+        .course {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f9f9f9;
+        }
+        .course h2 {
+            color: #007BFF;
+        }
+        .course p {
+            font-size: 16px;
+        }
+    </style>
     <title>Computer Science Courses</title>
     <script type="application/ld+json">
     {
@@ -11,14 +31,14 @@
           "position": 1,
           "item": {
             "@type": "Course",
-            "url":"https://www.example.com/courses#intro-to-cs",
+            "url": "https://www.example.com/courses#intro-to-cs",
             "name": "Introduction to Computer Science and Programming",
             "description": "This is an introductory CS course laying out the basics.",
             "provider": {
               "@type": "Organization",
               "name": "University of Technology - Example",
               "sameAs": "https://www.example.com"
-           }
+            }
           }
         },
         {
@@ -26,35 +46,51 @@
           "position": 2,
           "item": {
             "@type": "Course",
-            "url":"https://www.example.com/courses#intermediate-cs",
+            "url": "https://www.example.com/courses#intermediate-cs",
             "name": "Intermediate Computer Science and Programming",
             "description": "This is a CS course that builds on the basics learned in the Introduction course.",
             "provider": {
               "@type": "Organization",
               "name": "University of Technology - Example",
               "sameAs": "https://www.example.com"
-           }
-         }
+            }
+          }
         },
         {
           "@type": "ListItem",
           "position": 3,
           "item": {
             "@type": "Course",
-            "url":"https://www.example.com/courses#advanced-cs",
+            "url": "https://www.example.com/courses#advanced-cs",
             "name": "Advanced Computer Science and Programming",
             "description": "This CS course covers advanced programming principles.",
             "provider": {
               "@type": "Organization",
               "name": "University of Technology - Eureka",
               "sameAs": "https://www.example.com"
-           }
+            }
           }
         }
       ]
     }
     </script>
-  </head>
-  <body>
-  </body>
+</head>
+<body>
+    <h1>Computer Science Courses</h1>
+    <div class="course">
+        <h2><a href="https://www.example.com/courses#intro-to-cs">Introduction to Computer Science and Programming</a></h2>
+        <p>This is an introductory CS course laying out the basics.</p>
+        <p>Provider: <a href="https://www.example.com">University of Technology - Example</a></p>
+    </div>
+    <div class="course">
+        <h2><a href="https://www.example.com/courses#intermediate-cs">Intermediate Computer Science and Programming</a></h2>
+        <p>This is a CS course that builds on the basics learned in the Introduction course.</p>
+        <p>Provider: <a href="https://www.example.com">University of Technology - Example</a></p>
+    </div>
+    <div class="course">
+        <h2><a href="https://www.example.com/courses#advanced-cs">Advanced Computer Science and Programming</a></h2>
+        <p>This CS course covers advanced programming principles.</p>
+        <p>Provider: <a href="https://www.example.com">University of Technology - Eureka</a></p>
+    </div>
+</body>
 </html>
