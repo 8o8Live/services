@@ -25,8 +25,8 @@ author: cyberpfunk
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'https://8o8live.github.io/services/'
-baseurl: ''
+url: 'https://8o8live.github.io'  # The base URL for your GitHub Pages site without the subdirectory
+baseurl: '/services'           # The subdirectory where your site is hosted
 
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
